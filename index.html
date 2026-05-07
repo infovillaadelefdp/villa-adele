@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Villa Adele — B&B a Fossalta di Piave</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --cream: #f5f0e8;
+      --terra: #b5704a;
+      --green: #2c3d2e;
+      --warm-gray: #8a7f74;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: var(--cream);
+      color: var(--green);
+    }
+
+    header {
+      background: var(--green);
+      color: var(--cream);
+      text-align: center;
+      padding: 60px 24px 48px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      letter-spacing: 0.12em;
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #a8b8a0;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .accent { color: var(--terra); }
+
+    section {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      font-weight: normal;
+      margin-bottom: 20px;
+      color: var(--terra);
+    }
+
+    section p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #4a4035;
+      margin-bottom: 16px;
+    }
+
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 4px;
+      padding: 28px 20px;
+      text-align: center;
+      border-top: 3px solid var(--terra);
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: var(--warm-gray);
+      margin: 0;
+    }
+
+    footer {
+      background: var(--green);
+      color: #a8b8a0;
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--terra);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Villa <span class="accent">Adele</span></h1>
+    <p>Bed &amp; Breakfast · Fossalta di Piave, Venezia</p>
+  </header>
+
+  <section>
+    <h2>Benvenuti</h2>
+    <p>Villa Adele è un B&amp;B a conduzione familiare immerso nella campagna veneta, a pochi chilometri da Venezia. Camere accoglienti, colazione artigianale e un'atmosfera autentica vi aspettano.</p>
+    <p>Offriamo esperienze su misura: cooking class, home restaurant, passeggiate tra i vigneti e tanto altro, per un soggiorno che va oltre il semplice pernottamento.</p>
+
+    <div class="highlights">
+      <div class="card">
+        <h3>Camere</h3>
+        <p>3 camere confortevoli con vista sul giardino</p>
+      </div>
+      <div class="card">
+        <h3>Colazione</h3>
+        <p>Prodotti locali e fatti in casa ogni mattina</p>
+      </div>
+      <div class="card">
+        <h3>Esperienze</h3>
+        <p>Cooking class, home restaurant e itinerari locali</p>
+      </div>
+      <div class="card">
+        <h3>Posizione</h3>
+        <p>Via Roma 67, Fossalta di Piave — 30 min da Venezia</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Villa Adele · Via Roma 67, Fossalta di Piave (VE) · <a href="mailto:nscobo06@gmail.com">nscobo06@gmail.com</a></p>
+    <p style="margin-top:8px"><a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+
+</body>
+</html>
