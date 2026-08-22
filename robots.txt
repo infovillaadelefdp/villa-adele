@@ -1,0 +1,7 @@
+# Villa Adele — https://infovillaadelefdp.github.io/villa-adele/
+# Note: GitHub Pages serves this project under a sub-path, so crawlers read
+# robots.txt from the domain root, not from here. Kept for a future custom domain.
+User-agent: *
+Allow: /
+
+Sitemap: https://infovillaadelefdp.github.io/villa-adele/sitemap.xml

@@ -3,11 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Villa Adele — Locazione Turistica a Fossalta di Piave, Veneto</title>
+  <meta name="description" content="Villa Adele — locazione turistica sul Piave di Hemingway. L'intera villa per voi: tre camere, due bagni, cucina e un giardino di ulivi, a 40 minuti da Venezia." />
+  <link rel="canonical" href="https://infovillaadelefdp.github.io/villa-adele/" />
+  <meta name="theme-color" content="#022050" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23022050'/%3E%3Ctext x='32' y='46' font-family='Georgia,serif' font-size='40' fill='%23f0f6f6' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+
+  <!-- LCP hero image: preload only the variant the media query will actually use -->
+  <link rel="preload" as="image" href="img/hero-900.jpg"  media="(max-width: 600px)" />
+  <link rel="preload" as="image" href="img/hero-1920.jpg" media="(min-width: 601px)" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Borel&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <meta name="description" content="Villa Adele — Il B&B della Famiglia Cobo sul Piave di Hemingway. Giardino di ulivi, cipressi, cucina veneziana della Sig.ra Adele. La tua base per Venezia, le Colline del Prosecco e l'Adriatico." />
-  <title>Villa Adele — B&B Fossalta di Piave, Veneto</title>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Borel&family=Inter:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Borel&family=Inter:wght@400;500;600&display=swap"></noscript>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:site_name" content="Villa Adele" />
+  <meta property="og:title" content="Villa Adele — Locazione Turistica sul Piave" />
+  <meta property="og:description" content="L'intera villa per voi: tre camere, due bagni, cucina e un giardino di ulivi, a 40 minuti da Venezia." />
+  <meta property="og:url" content="https://infovillaadelefdp.github.io/villa-adele/" />
+  <meta property="og:image" content="https://infovillaadelefdp.github.io/villa-adele/img/og-card.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Il giardino di ulivi di Villa Adele" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Villa Adele — Locazione Turistica sul Piave" />
+  <meta name="twitter:description" content="L'intera villa per voi, a 40 minuti da Venezia." />
+  <meta name="twitter:image" content="https://infovillaadelefdp.github.io/villa-adele/img/og-card.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VacationRental",
+    "name": "Villa Adele",
+    "description": "Locazione turistica a Fossalta di Piave (VE). L'intera villa per voi: tre camere, due bagni, cucina e un giardino di ulivi, a 40 minuti da Venezia.",
+    "url": "https://infovillaadelefdp.github.io/villa-adele/",
+    "image": [
+      "https://infovillaadelefdp.github.io/villa-adele/img/og-card.jpg",
+      "https://infovillaadelefdp.github.io/villa-adele/img/story-1000.jpg",
+      "https://infovillaadelefdp.github.io/villa-adele/img/room-hemingway.jpg"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via Roma 67",
+      "addressLocality": "Fossalta di Piave",
+      "addressRegion": "VE",
+      "postalCode": "30020",
+      "addressCountry": "IT"
+    },
+    "email": "info.villa.adele.fdp@gmail.com",
+    "telephone": "+39 327 895 6094",
+    "numberOfBedrooms": 3,
+    "numberOfBathroomsTotal": 2,
+    "occupancy": { "@type": "QuantitativeValue", "maxValue": 6 },
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Cucina", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Aria condizionata", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Riscaldamento", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Parcheggio privato gratuito", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Giardino", "value": true }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/villa_adele_fdp/",
+      "https://www.facebook.com/profile.php?id=61573661207357",
+      "https://www.booking.com/Share-UyQWcgbK",
+      "https://www.airbnb.it/rooms/1752436417424606081"
+    ]
+  }
+  </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -18,6 +83,8 @@
       --olive:      #72a276;
       --navy:       #022050;
       --gold:       #72a276;
+      /* Darker green for text on light backgrounds (#72a276 is only 2.7:1 on cream). */
+      --gold-ink:   #456f4c;
       --text:       #022050;
       --light:      #eaf4f4;
       --sans:    'Inter', 'Helvetica Neue', 'Arial', sans-serif;
@@ -72,7 +139,7 @@
       min-height: 100svh;
       background:
         linear-gradient(105deg, rgba(2,32,80,0.82) 0%, rgba(2,32,80,0.65) 50%, rgba(2,32,80,0.28) 100%),
-        url('IMG_6928.jpg') center 40%/cover no-repeat;
+        url('img/hero-1920.jpg') center 40%/cover no-repeat;
       display: flex; flex-direction: column;
       align-items: flex-start; justify-content: center;
       padding: 8rem 8% 5rem;
@@ -114,7 +181,7 @@
       font-size: 0.85rem;
       font-style: italic;
       line-height: 1.6;
-      color: rgba(255,255,255,0.45);
+      color: rgba(255,255,255,0.58);
       margin-top: 1.4rem;
       margin-bottom: 2rem;
       padding-top: 1.4rem;
@@ -193,6 +260,9 @@
     }
     .story-img {
       width: 100%;
+      /* The height="" attribute is a presentational hint; without this it wins
+         over aspect-ratio and object-fit crops the sides off. */
+      height: auto;
       aspect-ratio: 4/5;
       object-fit: cover;
       border-radius: 2px;
@@ -257,14 +327,6 @@
       display: block;
     }
     .room-body { padding: 1.5rem; }
-    .room-price {
-      font-family: var(--sans);
-      font-size: 0.78rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--terracotta);
-      margin-bottom: 0.3rem;
-    }
     .room-features {
       list-style: none;
       margin-top: 1rem;
@@ -277,7 +339,7 @@
       border-bottom: 1px solid var(--sand);
       display: flex; align-items: center; gap: 0.5rem;
     }
-    .room-features li::before { content: '✓'; color: var(--olive); font-weight: bold; }
+    .room-features li::before { content: '✓'; color: var(--gold-ink); font-weight: bold; }
 
     /* ── EXPERIENCES ── */
     .experiences { background: white; }
@@ -339,68 +401,6 @@
       color: #6b5e4a;
     }
 
-    /* ── PRICING ── */
-    .pricing { background: var(--navy); color: white; }
-    .pricing h2 { color: var(--sand); }
-    .pricing .section-label { color: var(--gold); }
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      margin-top: 3rem;
-    }
-    .price-card {
-      border: 1px solid rgba(255,255,255,0.15);
-      padding: 2rem;
-      border-radius: 2px;
-      text-align: center;
-    }
-    .price-card.featured {
-      border-color: var(--gold);
-      background: rgba(200,150,62,0.08);
-    }
-    .price-season {
-      font-family: var(--sans);
-      font-size: 0.75rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 1rem;
-    }
-    .price-amount {
-      font-size: 2.8rem;
-      font-weight: 400;
-      color: white;
-      line-height: 1;
-    }
-    .price-amount sup { font-size: 1.2rem; vertical-align: top; margin-top: 0.5rem; }
-    .price-per {
-      font-family: var(--sans);
-      font-size: 0.75rem;
-      color: rgba(255,255,255,0.5);
-      margin-bottom: 1.5rem;
-    }
-    .price-details {
-      list-style: none;
-      text-align: left;
-    }
-    .price-details li {
-      font-family: var(--sans);
-      font-size: 0.82rem;
-      color: rgba(255,255,255,0.65);
-      padding: 0.3rem 0;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      display: flex; align-items: center; gap: 0.5rem;
-    }
-    .price-details li::before { content: '·'; color: var(--gold); font-size: 1.2rem; }
-    .pricing-note {
-      text-align: center;
-      margin-top: 2rem;
-      font-family: var(--sans);
-      font-size: 0.82rem;
-      color: rgba(255,255,255,0.45);
-    }
-
     /* ── BREAKFAST ── */
     .breakfast { background: var(--cream); }
     .breakfast-grid {
@@ -408,54 +408,6 @@
       grid-template-columns: 1fr 1fr;
       gap: 4rem;
       align-items: center;
-    }
-    .breakfast-list {
-      list-style: none;
-      margin-top: 1.5rem;
-    }
-    .breakfast-list li {
-      padding: 0.6rem 0;
-      border-bottom: 1px solid var(--sand);
-      display: flex; align-items: flex-start; gap: 0.8rem;
-      font-size: 0.95rem;
-    }
-    .breakfast-list li span:first-child {
-      color: var(--terracotta);
-      font-weight: bold;
-      min-width: 1rem;
-    }
-
-    /* ── TESTIMONIALS ── */
-    .testimonials { background: white; }
-    .testi-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-      margin-top: 3rem;
-    }
-    .testi-card {
-      padding: 2rem;
-      background: var(--cream);
-      border-radius: 2px;
-      position: relative;
-    }
-    .testi-stars {
-      color: var(--gold);
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
-    }
-    .testi-text {
-      font-style: italic;
-      font-size: 0.95rem;
-      color: var(--text);
-      margin-bottom: 1.2rem;
-    }
-    .testi-author {
-      font-family: var(--sans);
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--terracotta);
     }
 
     /* ── HOW TO GET HERE ── */
@@ -483,32 +435,13 @@
     .book {
       background:
         linear-gradient(rgba(2,32,80,0.88), rgba(2,32,80,0.88)),
-        url('IMG_7044.jpg') center/cover;
+        url('img/book-1400.jpg') center/cover;
       color: white;
       text-align: center;
       padding: 6rem 2rem;
     }
     .book h2 { color: var(--sand); font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
     .book p { color: rgba(255,255,255,0.75); max-width: 520px; margin: 0 auto 2.5rem; }
-    .book-form {
-      display: flex;
-      gap: 0.75rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 1.5rem;
-    }
-    .book-form input {
-      padding: 0.8rem 1.2rem;
-      border: 1px solid rgba(255,255,255,0.25);
-      background: rgba(255,255,255,0.08);
-      color: white;
-      font-family: var(--sans);
-      font-size: 0.85rem;
-      border-radius: 2px;
-      min-width: 160px;
-    }
-    .book-form input::placeholder { color: rgba(255,255,255,0.45); }
-    .book-form input:focus { outline: none; border-color: var(--gold); }
     .book-channels {
       display: flex;
       justify-content: center;
@@ -521,7 +454,7 @@
       font-size: 0.75rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.5);
+      color: rgba(255,255,255,0.62);
       text-decoration: none;
       border-bottom: 1px solid rgba(255,255,255,0.2);
       padding-bottom: 2px;
@@ -532,7 +465,7 @@
     /* ── FOOTER ── */
     footer {
       background: #010f28;
-      color: rgba(255,255,255,0.5);
+      color: rgba(255,255,255,0.62);
       padding: 3rem 2rem;
     }
     .footer-inner {
@@ -562,7 +495,7 @@
     footer ul a {
       font-family: var(--sans);
       font-size: 0.82rem;
-      color: rgba(255,255,255,0.5);
+      color: rgba(255,255,255,0.62);
       text-decoration: none;
       transition: color 0.2s;
     }
@@ -585,7 +518,7 @@
       font-size: 0.75rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.4);
+      color: rgba(255,255,255,0.58);
       text-decoration: none;
       transition: color 0.2s;
     }
@@ -615,8 +548,8 @@
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       .story-grid, .breakfast-grid { grid-template-columns: 1fr; }
-      .narratives-grid, .rooms-grid, .pricing-grid,
-      .testi-grid, .howtoget-grid { grid-template-columns: 1fr; }
+      .narratives-grid, .rooms-grid,
+      .howtoget-grid { grid-template-columns: 1fr; }
       .around-grid { grid-template-columns: repeat(2, 1fr); }
       .exp-grid { grid-template-columns: 1fr; }
       .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
@@ -645,13 +578,75 @@
         padding: 7rem 1.5rem 4rem;
         background:
           linear-gradient(rgba(2,32,80,0.72) 0%, rgba(2,32,80,0.72) 100%),
-          url('IMG_6928.jpg') center 40%/cover no-repeat;
+          url('img/hero-900.jpg') center 40%/cover no-repeat;
       }
       .hero-inner { max-width: 100%; }
       .hero h1 { font-size: clamp(2.4rem, 10vw, 3rem); }
       .hero-sub { max-width: 100%; font-size: 0.95rem; }
       .btn-group { justify-content: center; }
       .hero-tagline { text-align: center; max-width: 100%; }
+    }
+    /* ── FOCUS VISIBILITY ── */
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    /* ── SCREEN-READER ONLY ── */
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+    }
+
+    /* ── WHOLE-VILLA CALLOUT ── */
+    .whole-villa {
+      margin-top: 2.5rem;
+      padding: 2rem;
+      background: white;
+      border-left: 3px solid var(--gold-ink);
+    }
+    .whole-villa h3 { color: var(--terracotta); margin-bottom: 0.5rem; }
+    .whole-villa p  { margin: 0; font-size: 0.95rem; }
+
+    /* ── REVIEWS ── */
+    .reviews { background: white; text-align: center; }
+    .reviews .lead { margin-left: auto; margin-right: auto; }
+    .reviews-card {
+      max-width: 620px;
+      margin: 2.5rem auto 0;
+      padding: 2.5rem 2rem;
+      background: var(--cream);
+      border-radius: 2px;
+    }
+    .reviews-card p { font-size: 0.95rem; margin-bottom: 1.75rem; }
+
+    /* ── BOOKING CTA ── */
+    .book-cta {
+      display: flex; flex-wrap: wrap;
+      gap: 0.9rem; justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+    .book-contact { font-size: 0.9rem; color: rgba(255,255,255,0.75); }
+    .book-contact a { color: var(--sand); }
+
+    /* ── HOUSE FACTS ── */
+    .house-list { list-style: none; margin-top: 1.5rem; }
+    .house-list li {
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      padding: 0.4rem 0;
+      border-bottom: 1px solid var(--sand);
+      display: flex; gap: 0.6rem;
+    }
+    .house-list li span { color: var(--gold-ink); font-weight: 600; }
+    .house-note {
+      margin-top: 1.5rem;
+      padding: 1rem 1.2rem;
+      background: white;
+      border-left: 3px solid var(--terracotta);
+      font-size: 0.88rem;
     }
   </style>
 </head>
@@ -661,43 +656,42 @@
 <nav>
   <a href="#" class="nav-logo">Villa Adele</a>
   <ul id="nav-menu">
-    <li><a href="#story" onclick="closeMenu()">La Nostra Storia</a></li>
-    <li><a href="#rooms" onclick="closeMenu()">Camere</a></li>
-    <li><a href="#experiences" onclick="closeMenu()">Esperienze</a></li>
+    <li><a href="#story" onclick="closeMenu()">La Villa</a></li>
+    <li><a href="#rooms" onclick="closeMenu()">Gli Spazi</a></li>
+    <li><a href="#experiences" onclick="closeMenu()">Cosa Fare</a></li>
     <li><a href="#around" onclick="closeMenu()">Dintorni</a></li>
     <li><a href="#book" onclick="closeMenu()">Prenota</a></li>
   </ul>
-  <button class="nav-hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()">
+  <button class="nav-hamburger" id="hamburger" aria-label="Apri il menu"
+          aria-expanded="false" aria-controls="nav-menu" onclick="toggleMenu()">
     <span></span><span></span><span></span>
   </button>
 </nav>
-
 <!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
-    <p class="hero-eyebrow">B&amp;B di Famiglia · Veneto</p>
+    <p class="hero-eyebrow">Locazione Turistica · Veneto</p>
     <h1>Villa Adele</h1>
-    <p class="hero-sub">Sul Piave di Hemingway, a 40 minuti da Venezia, tre camere con colazione fatta in casa.</p>
-    <p class="hero-tagline">"Giardino di ulivi, cipressi e cucina veneziana: la tua base per Venezia, le Colline del Prosecco e l'Adriatico."</p>
+    <p class="hero-sub">Sul Piave di Hemingway, a 40 minuti da Venezia. L'intera villa per voi: tre camere, due bagni, cucina e un giardino di ulivi.</p>
+    <p class="hero-tagline">"Giardino di ulivi, cipressi e la quiete della pianura del Piave: la vostra base per Venezia, le Colline del Prosecco e l'Adriatico."</p>
     <div class="btn-group">
-      <a href="#book" class="btn btn-primary">Verifica Disponibilità</a>
-      <a href="#rooms" class="btn btn-outline">Le Nostre Camere</a>
+      <a href="https://www.booking.com/Share-UyQWcgbK" class="btn btn-primary" target="_blank" rel="noopener">Prenota su Booking.com</a>
+      <a href="#story" class="btn btn-outline">Scopri la Villa</a>
     </div>
   </div>
 </section>
-
 <!-- STORY -->
 <section class="story" id="story">
   <div class="container">
     <div class="story-grid">
       <div>
         <p class="section-label">La Nostra Storia</p>
-        <h2>La Famiglia Cobo e la Cucina della Sig.ra Adele</h2>
+        <h2>La Famiglia Cobo e la Villa che Porta il Nome di Adele</h2>
         <p class="lead">
-          La Famiglia Cobo ha acquistato questa proprietà, l'ha ristrutturata da zero e l'ha chiamata come la persona che la rende ciò che è: Adele, proprietaria, responsabile e la cuoca migliore della casa.
+          La Famiglia Cobo ha acquistato questa proprietà, l'ha ristrutturata da zero e l'ha chiamata come la persona attorno a cui ruota da sempre la casa: Adele.
         </p>
         <p>
-          La Sig.ra Adele ha lavorato per anni nelle cucine di alcuni dei migliori ristoranti di Venezia, prima di decidere che preferiva cucinare per persone con cui poteva davvero parlare. A Villa Adele, queste persone sono gli ospiti. Ogni colazione, ogni aperitivo serale, ogni barattolo di conserva in camera: fatto da lei.
+          Oggi Villa Adele è una locazione turistica: quando prenotate, la casa è vostra per intero. Nessuna reception, nessun corridoio condiviso con altri ospiti, nessun orario da rispettare se non i vostri.
         </p>
         <p>
           La villa si trova all'interno di un grande giardino di ulivi incorniciato da alti cipressi. Appena fuori dal cancello il paesaggio si apre: campi di mais, filari di viti, la quiete piatta della pianura del Piave in estate. Il fiume è a tre chilometri. Il percorso del patrimonio hemingwayano inizia proprio qui.
@@ -710,15 +704,12 @@
           Venezia è a quaranta minuti di treno. Le Colline del Prosecco sono a quaranta minuti a nord. L'Adriatico è a venticinque chilometri a sud. Il giardino di ulivi è sempre qui quando si torna.
         </p>
       </div>
-      <img
-        class="story-img"
-        src="IMG_6931.jpg"
-        alt="Giardino e facciata di Villa Adele, Fossalta di Piave"
-      />
+      <img class="story-img" src="img/story-1000.jpg" width="900" height="1125"
+           loading="lazy" decoding="async"
+           alt="Giardino di ulivi e facciata di Villa Adele, Fossalta di Piave" />
     </div>
   </div>
 </section>
-
 <!-- THREE NARRATIVES -->
 <section class="narratives">
   <div class="container">
@@ -727,146 +718,134 @@
     <div class="narratives-grid">
 
       <div class="narrative-card">
-        <div class="narrative-icon">🫒</div>
-        <h3>Il Giardino e la Cucina</h3>
-        <p>Un grande giardino di ulivi racchiuso da cipressi. Campi di mais e filari di viti oltre il cancello. La Sig.ra Adele, cuoca veneziana professionista, in cucina ogni mattina. È l'esperienza di cui gli ospiti parlano di più. Non può essere replicata da un hotel.</p>
+        <div class="narrative-icon" aria-hidden="true">🥒</div>
+        <h3>Il Giardino e la Quiete</h3>
+        <p>Un grande giardino di ulivi racchiuso da cipressi. Campi di mais e filari di viti oltre il cancello. La sera si sente passare qualche bicicletta e poco altro. È la cosa di cui gli ospiti parlano di più, e non può essere replicata da un hotel.</p>
       </div>
 
       <div class="narrative-card">
-        <div class="narrative-icon">🚴</div>
-        <h3>Base per il Turismo Lento</h3>
-        <p>Il Piave è a 3 km. Il percorso Hemingway inizia dal cancello. Biciclette in garage, Prosecco a 40 km a nord, Raboso dalla tenuta accanto. Si torna al giardino di ulivi con un bicchiere di qualcosa di locale, poi si lascia decidere alla Sig.ra Adele cosa c'è per cena.</p>
+        <div class="narrative-icon" aria-hidden="true">🔑</div>
+        <h3>Tutta la Villa per Voi</h3>
+        <p>Non si prenota una camera: si prenota la casa. Tre camere, due bagni, la cucina, il giardino e il parcheggio sono a disposizione esclusiva del vostro gruppo, fino a sei persone. Si entra e si esce quando si vuole, con le proprie chiavi.</p>
       </div>
 
       <div class="narrative-card">
-        <div class="narrative-icon">🚂</div>
+        <div class="narrative-icon" aria-hidden="true">🚂</div>
         <h3>Base Intelligente per Venezia</h3>
-        <p>Venezia è a 40 minuti di treno. Si paga €140 invece di €380. Si dorme sotto i cipressi invece che in un corridoio turistico. E ci si sveglia con una colazione veneziana cucinata da chi ha trascorso anni nelle migliori cucine di Venezia, senza dover tornare in città.</p>
+        <p>Venezia è a 40 minuti di treno dalla stazione di San Donà di Piave. Si dorme sotto i cipressi invece che in un corridoio turistico, e la mattina dopo si riparte con calma verso la laguna, le colline o il mare.</p>
       </div>
 
     </div>
   </div>
 </section>
-
-<!-- EXPERIENCES -->
+<!-- COSA FARE -->
 <section class="experiences" id="experiences">
   <div class="container">
-    <p class="section-label">Esperienze Curate</p>
-    <h2>Ci pensiamo noi. Voi rilassatevi.</h2>
-    <p class="lead">Ogni ospite riceve un itinerario personalizzato la sera prima dell'arrivo. Queste sono alcune delle esperienze che organizziamo direttamente.</p>
+    <p class="section-label">Cosa Fare nei Dintorni</p>
+    <h2>La casa è vostra. L'itinerario anche.</h2>
+    <p class="lead">Villa Adele è una locazione turistica: non organizziamo tour né prenotiamo attività per gli ospiti. Quello che segue è semplicemente ciò che si trova intorno alla villa, con le distanze reali dal cancello.</p>
     <div class="exp-grid">
 
       <div class="exp-card">
         <p class="exp-distance">2 km da Villa Adele</p>
-        <h3>🍷 Hemingwine Tour da De Stefani</h3>
-        <p>Percorrete la tenuta dove si combatté la Grande Guerra, degustate il Raboso del Piave e il Piave Malanotte DOCG, e visitate il museo Hemingway. Organizziamo la prenotazione e il percorso in bicicletta dalla villa.</p>
+        <h3><span aria-hidden="true">🍷</span> Cantina De Stefani — Hemingwine</h3>
+        <p>Una tenuta dove si combatté la Grande Guerra, con degustazioni di Raboso del Piave e Piave Malanotte DOCG e un piccolo museo dedicato a Hemingway. Visite e degustazioni si prenotano direttamente presso la cantina.</p>
       </div>
 
       <div class="exp-card">
         <p class="exp-distance">Circuito di 90 minuti</p>
-        <h3>📖 Il Circuito Hemingway della Prima Guerra Mondiale</h3>
-        <p>Un percorso con audioguida (italiano, inglese, tedesco) attraverso i luoghi dove Hemingway prestò servizio e fu ferito nel luglio 1918. A piedi, in bicicletta, e diverso da qualsiasi tour letterario abbiate mai fatto.</p>
+        <h3><span aria-hidden="true">📖</span> Il Circuito Hemingway della Prima Guerra Mondiale</h3>
+        <p>Un percorso pubblico con audioguida (italiano, inglese, tedesco) attraverso i luoghi dove Hemingway prestò servizio e fu ferito nel luglio 1918. Si può fare a piedi o in bicicletta, partendo da Fossalta.</p>
       </div>
 
       <div class="exp-card">
         <p class="exp-distance">Da Fossalta · Giornata intera</p>
-        <h3>🚴 Ciclovia del Piave — Tappa Giornaliera</h3>
-        <p>Percorrete una tappa del grande itinerario ciclistico del Piave. Forniamo biciclette, colazione al sacco, percorso GPX e un suggerimento per il picnic lungo il fiume. Rientro in treno con le bici o con nostro servizio di trasporto.</p>
+        <h3><span aria-hidden="true">🚴</span> Ciclovia del Piave</h3>
+        <p>Il grande itinerario ciclistico che segue il Piave dalle Dolomiti all'Adriatico. Una tappa passa a pochi chilometri dalla villa, lungo argini pianeggianti e paesi di fiume.</p>
       </div>
 
       <div class="exp-card">
         <p class="exp-distance">35–45 km · Mezza giornata</p>
-        <h3>🏔️ Colline del Prosecco in Auto</h3>
-        <p>Progettiamo un percorso tra tre cantine di Conegliano e Valdobbiadene, Patrimonio UNESCO dal 2019. Include presentazioni a produttori che di solito non aprono le porte della cantina ai visitatori.</p>
+        <h3><span aria-hidden="true">🏔️</span> Colline del Prosecco</h3>
+        <p>Conegliano e Valdobbiadene, Patrimonio UNESCO dal 2019: crinali coltivati a vite, cantine aperte al pubblico e strade panoramiche. Circa quaranta minuti d'auto verso nord.</p>
       </div>
 
       <div class="exp-card">
         <p class="exp-distance">40 min in treno</p>
-        <h3>🛶 Venezia Fuori dai Circuiti Turistici</h3>
-        <p>Consegniamo a ogni ospite una mappa scritta a mano della Venezia che amiamo: sestieri senza code, bacari con i migliori cicchetti, un gondoliere che non applica prezzi turistici. E poi prenootiamo il treno per voi.</p>
+        <h3><span aria-hidden="true">🛶</span> Venezia</h3>
+        <p>Dalla stazione di San Donà di Piave si arriva a Venezia Santa Lucia in circa quaranta minuti. Abbastanza vicina per una giornata intera, abbastanza lontana da dormire in silenzio.</p>
       </div>
 
       <div class="exp-card">
         <p class="exp-distance">12 km</p>
-        <h3>🛍️ McArthurGlen Noventa di Piave</h3>
-        <p>Uno dei migliori outlet designer d'Italia: Gucci, Prada, Bottega, Brunello Cucinelli, a 15 minuti in auto. Organizziamo il trasporto e consigliamo il momento migliore per arrivare senza code.</p>
+        <h3><span aria-hidden="true">🛍️</span> McArthurGlen Noventa di Piave</h3>
+        <p>Uno dei principali outlet designer d'Italia — Gucci, Prada, Bottega Veneta, Brunello Cucinelli — a un quarto d'ora d'auto dalla villa.</p>
       </div>
 
     </div>
   </div>
 </section>
-
-<!-- ROOMS -->
+<!-- GLI SPAZI -->
 <section class="rooms" id="rooms">
   <div class="container">
-    <p class="section-label">Camere</p>
-    <h2>Tre Camere, Ognuna con la Propria Vista</h2>
-    <p class="lead">Tre camere al primo piano, appena ristrutturate dalla Famiglia Cobo. Ognuna ha il proprio carattere — soffitti a 2,70 m, luce diversa, vedute diverse sul giardino di ulivi. Il piano è servito da due bagni comuni: uno con doccia, uno con WC.</p>
+    <p class="section-label">Gli Spazi</p>
+    <h2>Tre Camere, Due Bagni — Tutto per Voi</h2>
+    <p class="lead">Prenotando Villa Adele avete l'intera casa. Tre camere al primo piano, appena ristrutturate dalla Famiglia Cobo — soffitti a 2,70 m, luce diversa, vedute diverse sul giardino di ulivi — e due bagni riservati al vostro gruppo: uno con doccia, uno con WC. Fino a sei persone.</p>
     <div class="rooms-grid">
 
       <div class="room-card">
-        <div class="room-img" style="background:var(--navy);display:flex;align-items:center;justify-content:center;">
-          <span style="font-family:var(--logo);font-size:1.6rem;color:var(--sand);opacity:0.35;">Hemingway</span>
-        </div>
+        <img class="room-img" src="img/room-hemingway.jpg" width="700" height="440"
+             loading="lazy" decoding="async" alt="Camera Hemingway, letto matrimoniale con testiera in ferro battuto" />
         <div class="room-body">
-          <p class="room-price">Da €140 / notte</p>
           <h3>Camera Hemingway</h3>
-          <p style="font-size:0.9rem;">La camera più esclusiva. Primo piano, angolo sud-est, con la sua <strong>terrazza coperta</strong> che si apre direttamente sul giardino di ulivi. Chiamata come lo scrittore ferito vicino al Piave, a tre chilometri da questa finestra.</p>
+          <p style="font-size:0.9rem;">Primo piano, angolo sud-est, con la sua <strong>terrazza coperta</strong> che si apre direttamente sul giardino di ulivi. Chiamata come lo scrittore ferito vicino al Piave, a tre chilometri da questa finestra.</p>
           <ul class="room-features">
             <li>Letto king size (180×200)</li>
-            <li>Bagni comuni (doccia + WC)</li>
             <li>Terrazza coperta esclusiva</li>
             <li>Aria condizionata e riscaldamento</li>
-            <li>Max 2 ospiti</li>
+            <li>2 ospiti</li>
           </ul>
         </div>
       </div>
 
       <div class="room-card">
-        <div class="room-img" style="background:var(--navy);display:flex;align-items:center;justify-content:center;">
-          <span style="font-family:var(--logo);font-size:1.6rem;color:var(--sand);opacity:0.35;">Prosecco</span>
-        </div>
+        <img class="room-img" src="img/room-prosecco.jpg" width="700" height="440"
+             loading="lazy" decoding="async" alt="Camera Prosecco, letto matrimoniale e armadio a specchio" />
         <div class="room-body">
-          <p class="room-price">Da €125 / notte</p>
           <h3>Camera Prosecco</h3>
-          <p style="font-size:0.9rem;">Primo piano, angolo nord-est. La camera più silenziosa della villa, lontana dalla strada, fresca d'estate. Affacciata sugli ulivi verso la campagna. Letto king size, finiture moderne.</p>
+          <p style="font-size:0.9rem;">Primo piano, angolo nord-est. La camera più silenziosa della villa, lontana dalla strada, fresca d'estate. Affacciata sugli ulivi verso la campagna.</p>
           <ul class="room-features">
             <li>Letto king size (180×200)</li>
-            <li>Bagni comuni (doccia + WC)</li>
             <li>Vista sul giardino e sulla campagna</li>
             <li>Aria condizionata e riscaldamento</li>
-            <li>Max 2 ospiti</li>
+            <li>2 ospiti</li>
           </ul>
         </div>
       </div>
 
       <div class="room-card">
-        <div class="room-img" style="background:var(--navy);display:flex;align-items:center;justify-content:center;">
-          <span style="font-family:var(--logo);font-size:1.6rem;color:var(--sand);opacity:0.35;">Piave</span>
-        </div>
+        <img class="room-img" src="img/room-piave.jpg" width="700" height="440"
+             loading="lazy" decoding="async" alt="Camera Piave, letto con testiera in ferro battuto e libreria" />
         <div class="room-body">
-          <p class="room-price">Da €110 / notte</p>
           <h3>Camera Piave</h3>
-          <p style="font-size:0.9rem;">Primo piano, camera centrale esposta a sud. Due letti singoli, la scelta giusta per due amici o colleghi in viaggio. Ottima luce mattutina, vista sul giardino di ulivi, posizione tranquilla al cuore della villa.</p>
+          <p style="font-size:0.9rem;">Primo piano, camera centrale esposta a sud. Due letti singoli, la scelta giusta per due amici o colleghi in viaggio. Ottima luce mattutina e vista sul giardino di ulivi.</p>
           <ul class="room-features">
             <li>Due letti singoli</li>
-            <li>Bagni comuni (doccia + WC)</li>
             <li>Vista sul giardino</li>
             <li>Aria condizionata e riscaldamento</li>
-            <li>Max 2 ospiti</li>
+            <li>2 ospiti</li>
           </ul>
         </div>
       </div>
 
     </div>
 
-    <div style="margin-top:2.5rem; padding:2rem; background:white; border-left:3px solid var(--gold);">
-      <h3 style="color:var(--terracotta); margin-bottom:0.5rem;">Villa in Esclusiva</h3>
-      <p style="margin:0; font-size:0.95rem;">Viaggiate in gruppo? Prenotate tutte e tre le camere in esclusiva a <strong>€380–450/notte</strong> e avrete l'intera proprietà per voi — giardino di ulivi, spazi comuni e la possibilità di organizzare una cena privata con la Sig.ra Adele.</p>
+    <div class="whole-villa">
+      <h3>L'Intera Villa, Sempre</h3>
+      <p>A Villa Adele non si prenota la singola camera: la locazione riguarda sempre tutta la casa. Le tre camere, i due bagni, la cucina, il giardino di ulivi e il parcheggio restano a disposizione esclusiva del vostro gruppo per tutta la durata del soggiorno.</p>
     </div>
   </div>
 </section>
-
 <!-- AROUND -->
 <section class="around" id="around">
   <div class="container">
@@ -925,116 +904,50 @@
   </div>
 </section>
 
-<!-- BREAKFAST -->
+<!-- LA CASA -->
 <section class="breakfast">
   <div class="container">
     <div class="breakfast-grid">
-      <img
-        class="story-img"
-        src="IMG_3242.jpg"
-        alt="Tavola della colazione di Villa Adele nel giardino sotto i cipressi"
-      />
+      <img class="story-img" src="img/house-1000.jpg" width="900" height="1125"
+           loading="lazy" decoding="async"
+           alt="Uno dei due bagni di Villa Adele, con specchio retroilluminato" />
       <div>
-        <p class="section-label">La Colazione di Adele</p>
-        <h2>Colazione Firmata da una Cuoca Professionista</h2>
-        <p>La Sig.ra Adele ha lavorato per anni nelle cucine di alcuni dei migliori ristoranti di Venezia. Adesso prepara la colazione per gli ospiti sotto i cipressi.</p>
-        <p>Non è una colazione continentale e nemmeno un buffet. È la colazione di una cuoca veneziana:</p>
-        <ul class="breakfast-list">
-          <li><span>·</span> Conserve di stagione fatte da Adele: olio d'oliva del giardino, marmellate di fichi e verdure sott'aceto</li>
-          <li><span>·</span> Paste fresche e pane, ritirati dal forno del paese alle 7:30</li>
-          <li><span>·</span> Formaggi locali, salumi e affettati, acquistati ogni settimana al mercato vicino</li>
-          <li><span>·</span> Uova preparate su richiesta: strapazzate, in frittata o alla veneziana con le erbe</li>
-          <li><span>·</span> Frutta di stagione dalla pianura del Piave, quello che è maturo in quella settimana</li>
-          <li><span>·</span> Caffè della moka. O, se preferite, una teiera e tutto il tempo del mondo.</li>
-          <li><span>·</span> Servita dalle 7:00 alle 10:00, orario anticipato per i ciclisti su richiesta</li>
+        <p class="section-label">La Casa</p>
+        <h2>Ristrutturata da Zero, Pronta all'Uso</h2>
+        <p>La Famiglia Cobo ha rifatto la villa completamente: impianti, finiture, bagni. Quello che trovate è una casa nuova in un giardino vecchio di ulivi.</p>
+        <ul class="house-list">
+          <li><span>·</span> Tre camere al primo piano, fino a sei ospiti</li>
+          <li><span>·</span> Due bagni riservati alla villa: uno con doccia, uno con WC</li>
+          <li><span>·</span> Cucina a disposizione esclusiva degli ospiti</li>
+          <li><span>·</span> Aria condizionata e riscaldamento in tutte le camere</li>
+          <li><span>·</span> Parcheggio privato gratuito all'interno della proprietà</li>
+          <li><span>·</span> Giardino di ulivi e loggia a uso esclusivo degli ospiti</li>
+          <li><span>·</span> Biciclette disponibili in garage</li>
+          <li><span>·</span> San Donà di Piave a 7 km per negozi, bar e ristoranti</li>
         </ul>
+        <p class="house-note">
+          Villa Adele è una <strong>locazione turistica</strong>, non una struttura ricettiva con servizi:
+          non sono previsti colazione, servizio di ristorazione, pulizie giornaliere né attività
+          organizzate dai proprietari. In compenso la casa è interamente vostra, cucina compresa:
+          si fa la spesa a San Donà di Piave e ci si organizza i pasti con i propri tempi.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PRICING -->
-<section class="pricing" id="pricing">
+<!-- RECENSIONI -->
+<section class="reviews">
   <div class="container">
-    <p class="section-label">Tariffe</p>
-    <h2>Prezzi Trasparenti. Nessuna Sorpresa.</h2>
-    <div class="pricing-grid">
-
-      <div class="price-card">
-        <p class="price-season">Bassa Stagione · Nov – Mar</p>
-        <div class="price-amount"><sup>€</sup>110</div>
-        <p class="price-per">per camera / per notte</p>
-        <ul class="price-details">
-          <li>Colazione inclusa</li>
-          <li>Parcheggio gratuito</li>
-          <li>Biciclette disponibili</li>
-          <li>Min. 2 notti</li>
-          <li>Supplemento Carnevale applicabile</li>
-        </ul>
-      </div>
-
-      <div class="price-card featured">
-        <p class="price-season">Mezza Stagione · Apr–Mag, Set–Ott</p>
-        <div class="price-amount"><sup>€</sup>140</div>
-        <p class="price-per">per camera / per notte</p>
-        <ul class="price-details">
-          <li>Colazione inclusa</li>
-          <li>Parcheggio gratuito</li>
-          <li>Biciclette disponibili</li>
-          <li>Min. 2 notti</li>
-          <li>La stagione migliore: vendemmia e fioritura</li>
-        </ul>
-      </div>
-
-      <div class="price-card">
-        <p class="price-season">Alta Stagione · Giu – Ago</p>
-        <div class="price-amount"><sup>€</sup>170</div>
-        <p class="price-per">per camera / per notte</p>
-        <ul class="price-details">
-          <li>Colazione inclusa</li>
-          <li>Parcheggio gratuito</li>
-          <li>Uso del giardino e della loggia</li>
-          <li>Min. 3 notti</li>
-          <li>Adriatico 25 km · Venezia 40 min</li>
-        </ul>
-      </div>
-
-    </div>
-    <p class="pricing-note">
-      Tutte le tariffe includono colazione, tassa di soggiorno e parcheggio gratuito. · Villa intera da €380/notte. · Tariffe corporate su richiesta.
-    </p>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="testimonials">
-  <div class="container">
-    <p class="section-label">Recensioni degli Ospiti</p>
+    <p class="section-label">Recensioni</p>
     <h2>Cosa Dicono i Nostri Ospiti</h2>
-    <div class="testi-grid">
-
-      <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"La colazione di Adele da sola vale il viaggio. Ho mangiato bene in tutto il Veneto e questa è buona quanto qualsiasi ristorante di Venezia — preparata per otto persone in un giardino sotto i cipressi. Straordinario."</p>
-        <p class="testi-author">James e Catherine, Edimburgo</p>
-      </div>
-
-      <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"Il giardino di ulivi al mattino, i campi di mais a perdita d'occhio e la Famiglia Cobo che ti fa sentire davvero a casa. Venezia in 40 minuti, poi si torna qui. Ti vizia per sempre rispetto agli hotel."</p>
-        <p class="testi-author">Liselotte, Amsterdam</p>
-      </div>
-
-      <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"Siamo venuti per Hemingway e le Colline del Prosecco. Siamo rimasti per la cucina di Adele. Ha la sicurezza di chi ha cucinato professionalmente per anni: lo si sente in ogni dettaglio."</p>
-        <p class="testi-author">Thomas e Anna, Berlino</p>
-      </div>
-
+    <p class="lead">Le recensioni di Villa Adele sono raccolte e verificate da Booking.com: le scrive solo chi ha davvero soggiornato qui.</p>
+    <div class="reviews-card">
+      <p>Leggete i commenti degli ospiti, i voti per pulizia, posizione e rapporto qualità-prezzo, e le foto caricate da chi è stato in villa prima di voi.</p>
+      <a href="https://www.booking.com/Share-UyQWcgbK" class="btn btn-primary" target="_blank" rel="noopener">Leggi le recensioni su Booking.com</a>
     </div>
   </div>
 </section>
-
 <!-- HOW TO GET HERE -->
 <section class="howtoget">
   <div class="container">
@@ -1043,56 +956,48 @@
     <div class="howtoget-grid">
 
       <div class="transport-card">
-        <span class="transport-icon">✈️</span>
+        <span class="transport-icon" aria-hidden="true">✈️</span>
         <h3>In Aereo</h3>
-        <p>Venezia Marco Polo (VCE): 45 min in auto.<br>Treviso Canova (TSF): 35 min in auto.<br>Trasferimenti aeroportuali su richiesta.</p>
+        <p>Venezia Marco Polo (VCE): 45 min in auto.<br>Treviso Canova (TSF): 35 min in auto.</p>
       </div>
 
       <div class="transport-card">
-        <span class="transport-icon">🚂</span>
+        <span class="transport-icon" aria-hidden="true">🚂</span>
         <h3>In Treno</h3>
-        <p>Stazione di San Donà di Piave: 7 km da Villa Adele.<br>Diretto a Venezia in 40 min, Treviso in 25 min.<br>Accompagniamo gli ospiti dalla stazione.</p>
+        <p>Stazione di San Donà di Piave: 7 km da Villa Adele.<br>Diretto a Venezia in 40 min, Treviso in 25 min.</p>
       </div>
 
       <div class="transport-card">
-        <span class="transport-icon">🚗</span>
+        <span class="transport-icon" aria-hidden="true">🚗</span>
         <h3>In Auto</h3>
-        <p>Uscita A4 a San Donà di Piave.<br>Parcheggio privato gratuito in villa.<br>Punto di ricarica elettrica disponibile su richiesta.</p>
+        <p>Uscita A4 a San Donà di Piave.<br>Parcheggio privato gratuito all'interno della proprietà.</p>
       </div>
 
     </div>
   </div>
 </section>
-
 <!-- BOOK -->
 <section class="book" id="book">
   <div class="container">
     <p class="section-label" style="color:var(--gold);">Prenotazioni</p>
-    <h2>Inizia a Pianificare il Tuo Soggiorno</h2>
-    <p>Rispondiamo a ogni richiesta personalmente entro 12 ore. Indicateci le date, la camera di interesse e cosa vi porta sul Piave — pensiamo noi al resto.</p>
-    <div class="book-form">
-      <input type="date" placeholder="Arrivo" />
-      <input type="date" placeholder="Partenza" />
-      <select style="padding:0.8rem 1.2rem; border:1px solid rgba(255,255,255,0.25); background:rgba(255,255,255,0.08); color:white; font-family:var(--sans); font-size:0.85rem; border-radius:2px; min-width:160px;">
-        <option value="">Qualsiasi Camera</option>
-        <option>Camera Hemingway</option>
-        <option>Camera Prosecco</option>
-        <option>Camera Piave</option>
-        <option>Villa Completa</option>
-      </select>
-      <a href="mailto:info.villa.adele.fdp@gmail.com" class="btn btn-primary">Invia Richiesta</a>
+    <h2>Prenota il Tuo Soggiorno</h2>
+    <p>Disponibilità, tariffe aggiornate e prenotazione immediata sono su Booking.com e Airbnb. Per qualsiasi domanda prima di prenotare, scriveteci pure direttamente.</p>
+    <div class="book-cta">
+      <a href="https://www.booking.com/Share-UyQWcgbK" class="btn btn-primary" target="_blank" rel="noopener">Prenota su Booking.com</a>
+      <a href="https://www.airbnb.it/rooms/1752436417424606081" class="btn btn-outline" target="_blank" rel="noopener">Prenota su Airbnb</a>
     </div>
-    <p style="font-size:0.82rem; color:rgba(255,255,255,0.4); font-family:var(--sans);">
-      Oppure scrivete a <a href="mailto:info.villa.adele.fdp@gmail.com" style="color:var(--gold);">info.villa.adele.fdp@gmail.com</a> · <a href="tel:+393278956094" style="color:var(--gold);">+39 327 895 6094</a>
+    <p class="book-contact">
+      <a href="mailto:info.villa.adele.fdp@gmail.com">info.villa.adele.fdp@gmail.com</a>
+      · <a href="tel:+393278956094">+39 327 895 6094</a>
     </p>
     <div class="book-channels">
-      <a href="mailto:info.villa.adele.fdp@gmail.com" class="book-channel">Diretto (miglior tariffa)</a>
-      <a href="https://www.instagram.com/villa_adele_fdp/" class="book-channel">Instagram</a>
-      <a href="https://www.facebook.com/profile.php?id=61573661207357" class="book-channel">Facebook</a>
+      <a href="https://www.booking.com/Share-UyQWcgbK" class="book-channel" target="_blank" rel="noopener">Booking.com</a>
+      <a href="https://www.airbnb.it/rooms/1752436417424606081" class="book-channel" target="_blank" rel="noopener">Airbnb</a>
+      <a href="https://www.instagram.com/villa_adele_fdp/" class="book-channel" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61573661207357" class="book-channel" target="_blank" rel="noopener">Facebook</a>
     </div>
   </div>
 </section>
-
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
@@ -1100,16 +1005,18 @@
       <div class="footer-brand">Villa Adele</div>
       <p>Via Roma 67, Fossalta di Piave (VE)<br>Veneto, Italia</p>
       <div class="social-links" style="margin-top:1.2rem;">
-        <a href="https://www.instagram.com/villa_adele_fdp/">Instagram</a>
-        <a href="https://www.facebook.com/profile.php?id=61573661207357">Facebook</a>
+        <a href="https://www.booking.com/Share-UyQWcgbK" target="_blank" rel="noopener">Booking.com</a>
+        <a href="https://www.airbnb.it/rooms/1752436417424606081" target="_blank" rel="noopener">Airbnb</a>
+        <a href="https://www.instagram.com/villa_adele_fdp/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61573661207357" target="_blank" rel="noopener">Facebook</a>
       </div>
     </div>
     <div>
       <h4>Naviga</h4>
       <ul>
-        <li><a href="#story">La Nostra Storia</a></li>
-        <li><a href="#rooms">Camere</a></li>
-        <li><a href="#experiences">Esperienze</a></li>
+        <li><a href="#story">La Villa</a></li>
+        <li><a href="#rooms">Gli Spazi</a></li>
+        <li><a href="#experiences">Cosa Fare</a></li>
         <li><a href="#around">Dintorni</a></li>
         <li><a href="#book">Prenota</a></li>
       </ul>
@@ -1117,8 +1024,8 @@
     <div>
       <h4>Informazioni</h4>
       <ul>
+        <li><a href="https://www.booking.com/Share-UyQWcgbK" target="_blank" rel="noopener">Disponibilità e tariffe</a></li>
         <li><a href="mailto:info.villa.adele.fdp@gmail.com">Check-in / Check-out</a></li>
-        <li><a href="mailto:info.villa.adele.fdp@gmail.com">Cancellazione</a></li>
         <li><a href="privacy.html">Privacy Policy</a></li>
         <li><a href="data-deletion.html">Eliminazione Dati</a></li>
       </ul>
@@ -1126,19 +1033,21 @@
   </div>
   <div class="footer-bottom">
     <span>© 2026 Villa Adele · Fossalta di Piave</span>
-    <span>B&amp;B Classificato Regione Veneto · Cedolare Secca applicata</span>
+    <span>Locazione Turistica · CIN IT027015C2YLTN3WZH</span>
   </div>
 </footer>
-
 <script>
+  function setMenu(open) {
+    document.getElementById('nav-menu').classList.toggle('open', open);
+    var h = document.getElementById('hamburger');
+    h.classList.toggle('open', open);
+    h.setAttribute('aria-expanded', open ? 'true' : 'false');
+    h.setAttribute('aria-label', open ? 'Chiudi il menu' : 'Apri il menu');
+  }
   function toggleMenu() {
-    document.getElementById('nav-menu').classList.toggle('open');
-    document.getElementById('hamburger').classList.toggle('open');
+    setMenu(!document.getElementById('nav-menu').classList.contains('open'));
   }
-  function closeMenu() {
-    document.getElementById('nav-menu').classList.remove('open');
-    document.getElementById('hamburger').classList.remove('open');
-  }
+  function closeMenu() { setMenu(false); }
   // Close menu on outside click
   document.addEventListener('click', function(e) {
     if (!e.target.closest('nav')) closeMenu();
